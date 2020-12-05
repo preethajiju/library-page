@@ -18,34 +18,52 @@
                 <table class="table">
                     <tr>
                         <td>BookName</td>
-                        <td><input type="text" class="formcontrol"></td>
+                        <td><input type="text" class="formcontrol" id="name"></td>
             
                     </tr>
                     <tr>
                         <td>Author</td>
-                        <td><input type="text" class="formcontrol"></td>
+                        <td><input type="text" class="formcontrol" id="name1"></td>
                     </tr>
                     <tr>
                         <td>Distribution</td>
-                        <td><input type="text" class="formcontrol"></td>
+                        <td><input type="text" class="formcontrol" id="name2"></td>
                     </tr>
                     <tr>
                         <td>Publisher</td>
-                        <td><input type="text" class="formcontrol"></td>
+                        <td><input type="text" class="formcontrol"id="name3"></td>
                     </tr>
                     <tr>
                         <td>MRP</td>
-                        <td><input type="text" class="formcontrol"></td>
+                        <td><input type="text" class="formcontrol" id="price"></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="btn btn-primary">OK</button></td>
+                        <td><button onclick="buttonclick()" class="btn btn-primary">OK</button></td>
                     </tr>
                 </table>
                 
             </div>
         </div>
     </div>
+    <script>
+        function buttonclick()
+        {
+            var getname=document.getElementById("name").value
+            var getauth=document.getElementById("name1").value
+            var getdist=document.getElementById("name2").value
+            var getpub=document.getElementById("name3").value
+            var getprice=document.getElementById("price").value
+            console.log(getname)
+            console.log(getauth)
+            console.log(getdist)
+            console.log(getpub)
+            console.log(getprice)
+        }
+
+
+
+    </script>
     
     
 </body>
